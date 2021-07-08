@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="preferencias principal">
+    <CheckBoxPreference
+        android:key="musica"
+        android:title="Reproducir Música"
+        android:summary="Se reproduce musica de fondo"/>
+    <ListPreference
+        android:defaultValue="1"
+        android:key="graficos"
+        android:title="Tipo de gráficos"
+        android:entries="@array/tiposGraficos"
+        android:entryValues="@array/tiposGraficosValores"
+        android:summary="Se escoje la representacion de graficos"/>
+    <EditTextPreference
+        android:key="fragmentos"
+        android:title="Número de Fragmentos"
+        android:summary="En cuantos trozos se divide el asteroide"
+        android:inputType="number"
+        android:defaultValue="3"/>
+    <ListPreference
+        android:defaultValue="0"
+        android:key="controles"
+        android:title="Controles"
+        android:entries="@array/tiposControles"
+        android:entryValues="@array/tiposControles"
+        android:summary="Forma de Controlar la Nave"/>
+</PreferenceScreen>
